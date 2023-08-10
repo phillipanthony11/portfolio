@@ -84,7 +84,7 @@ justify-content: space-around;
     border-radius: 3px;
 }
 .about {
-    background-color: lightgray;
+    background-color: rgb(180, 248, 225);
     margin:none;
     width: 100%;
 }
@@ -746,6 +746,16 @@ border-bottom: none;
 justify-content: space-around;
 display: flex;
 width: calc(100% - 10px);
+}
+
+#placeholderOne {
+  background-color: rgb(180, 248, 225);
+  margin:0;
+}
+
+#placeholderTwo {
+  background-color: honeydew;
+  margin:0;
 }
 
 @media screen and (max-width: 1450px ) { 
