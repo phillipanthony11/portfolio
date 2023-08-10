@@ -84,7 +84,7 @@ justify-content: space-around;
     border-radius: 3px;
 }
 .about {
-    background-color: rgb(180, 248, 225);
+    background-color: rgb(172, 214, 200);
     margin:none;
     width: 100%;
 }
@@ -749,7 +749,7 @@ width: calc(100% - 10px);
 }
 
 #placeholderOne {
-  background-color: rgb(180, 248, 225);
+  background-color: rgb(172, 214, 200);
   margin:0;
 }
 
