@@ -608,7 +608,7 @@ flex: 1;
     flex-direction: column;
     padding-bottom: 20px;
   color: white;
-  border: solid 5px lightblue;
+  border: solid 2px lightblue;
   justify-content: space-around;
 }
 
@@ -739,13 +739,14 @@ flex: 1;
 }
 
 .modal-project-screenshots {
-width: 440px;
+
 height: 330px;
-border: solid 5px lightblue;
+border: solid 2px lightblue;
 border-bottom: none;
 justify-content: space-around;
 display: flex;
-width: calc(100% - 10px);
+width: calc(100% - 4px);
+margin-right: 0;
 }
 
 #placeholderOne {
