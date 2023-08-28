@@ -136,87 +136,88 @@ function showSlidesThree(n) {
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-function openModalFour() {
-  document.getElementById("modal4").style.display = "block";
-}
+// function openModalFour() {
+//   document.getElementById("modal4").style.display = "block";
+// }
 
-function closeModalFour() {
-  document.getElementById("modal4").style.display = "none";
-}
+// function closeModalFour() {
+//   document.getElementById("modal4").style.display = "none";
+// }
 
-var slideIndex = 1;
-showSlidesFour(slideIndex);
+// var slideIndex = 1;
+// showSlidesFour(slideIndex);
 
-function plusSlidesFour(n) {
-  showSlidesFour((slideIndex += n));
-}
+// function plusSlidesFour(n) {
+//   showSlidesFour((slideIndex += n));
+// }
 
-function currentSlideFour(n) {
-  showSlidesFour((slideIndex = n));
-}
+// function currentSlideFour(n) {
+//   showSlidesFour((slideIndex = n));
+// }
 
-function showSlidesFour(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides4");
-  var dots = document.getElementsByClassName("demo4");
-  var captionText = document.getElementsByClassName("caption4");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
-}
+// function showSlidesFour(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides4");
+//   var dots = document.getElementsByClassName("demo4");
+//   var captionText = document.getElementsByClassName("caption4");
+//   if (n > slides.length) {
+//     slideIndex = 1;
+//   }
+//   if (n < 1) {
+//     slideIndex = slides.length;
+//   }
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   console.log(slides);
+//   slides[slideIndex - 1].style.display = "block";
+//   dots[slideIndex - 1].className += " active";
+//   captionText.innerHTML = dots[slideIndex - 1].alt;
+// }
 
-function openModalFive() {
-  document.getElementById("modal5").style.display = "block";
-}
+// function openModalFive() {
+//   document.getElementById("modal5").style.display = "block";
+// }
 
-function closeModalFive() {
-  document.getElementById("modal5").style.display = "none";
-}
+// function closeModalFive() {
+//   document.getElementById("modal5").style.display = "none";
+// }
 
-var slideIndex = 1;
-showSlidesFive(slideIndex);
+// var slideIndex = 1;
+// showSlidesFive(slideIndex);
 
-function plusSlidesFive(n) {
-  showSlidesFive((slideIndex += n));
-}
+// function plusSlidesFive(n) {
+//   showSlidesFive((slideIndex += n));
+// }
 
-function currentSlideFive(n) {
-  showSlidesFive((slideIndex = n));
-}
+// function currentSlideFive(n) {
+//   showSlidesFive((slideIndex = n));
+// }
 
-function showSlidesFive(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides5");
-  var dots = document.getElementsByClassName("demo5");
-  var captionText = document.getElementsByClassName("caption5");
-  // if (n > slides.length) {
-  //   slideIndex = 1;
-  // }
-  // if (n < 1) {
-  //   slideIndex = slides.length;
-  // }
-  // for (i = 0; i < slides.length; i++) {
-  //   slides[i].style.display = "none";
-  // }
-  // for (i = 0; i < dots.length; i++) {
-  //   dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  // slides[slideIndex - 1].style.display = "block";
-  // dots[slideIndex - 1].className += " active";
-  // captionText.innerHTML = dots[slideIndex - 1].alt;
-}
+// function showSlidesFive(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides5");
+//   var dots = document.getElementsByClassName("demo5");
+//   var captionText = document.getElementsByClassName("caption5");
+// if (n > slides.length) {
+//   slideIndex = 1;
+// }
+// if (n < 1) {
+//   slideIndex = slides.length;
+// }
+// for (i = 0; i < slides.length; i++) {
+//   slides[i].style.display = "none";
+// }
+// for (i = 0; i < dots.length; i++) {
+//   dots[i].className = dots[i].className.replace(" active", "");
+// }
+// slides[slideIndex - 1].style.display = "block";
+// dots[slideIndex - 1].className += " active";
+// captionText.innerHTML = dots[slideIndex - 1].alt;
+// }
 var aboutSection = document.getElementById("about-section");
 var portfolioSection = document.getElementById("portfolio-section");
 var contactSection = document.getElementById("contact-section");
@@ -229,6 +230,11 @@ function activeTab() {
   var boundTopPortfolio = portfolio.getBoundingClientRect().top;
   var boundTopContact = contact.getBoundingClientRect().top;
 
+  console.log("about-top:" + about.getBoundingClientRect().top);
+  console.log("portfolio-top:" + portfolio.getBoundingClientRect().top);
+
+  console.log("contact-top:" + contact.getBoundingClientRect().top);
+
   if (boundTopAbout <= 200) {
     aboutSection.classList.add("please-work-hover");
   }
@@ -238,7 +244,7 @@ function activeTab() {
   if (boundTopPortfolio <= 150) {
     portfolioSection.classList.add("please-work-hover");
   }
-  if (boundTopPortfolio <= -900 || boundTopPortfolio >= 151) {
+  if (boundTopPortfolio <= -600 || boundTopPortfolio >= 151) {
     portfolioSection.classList.remove("please-work-hover");
   }
   if (boundTopContact <= 160) {

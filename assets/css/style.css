@@ -177,6 +177,10 @@ flex: 1;
     color:#000;
   }
 
+  .modal-links:hover {
+    text-decoration: underline;
+  }
+
   .nav-bar .active {
     background-color: aquamarine;
     color:#000;
@@ -201,8 +205,9 @@ flex: 1;
   }
 
   .bio-image {
-    height: 56vh;
-    margin-left: 55px;
+    height: 35vh;
+    margin-bottom: 2vh;
+    margin-left: 80px;
     border-radius: 15px;
 }
 
@@ -235,10 +240,10 @@ flex: 1;
 
   .bio-para {
     font-size: large;
-    margin-top: 38px;
+    margin-top: 42px;
     text-align: center;
-    padding-left: 65px;
-    padding-right: 98px;
+    padding-left: 105px;
+    padding-right: 105px;
     font-family:sans-serif;
     flex-wrap: wrap;
     flex-direction: column;
@@ -246,7 +251,6 @@ flex: 1;
   }
 
   .programming-skills {
-    padding-top: 30px;
     font-family:sans-serif;
   }
 
@@ -258,9 +262,10 @@ flex: 1;
 }
   
   .programming-skills-word  {
-    font-weight: 500;
-    font-size: x-large;
+    font-weight: 600;
+    font-size: 21px ;
     text-align: center;
+    margin-top: 5px;
     font-family:sans-serif;
   }
 
@@ -274,7 +279,9 @@ flex: 1;
     text-align: center;
     font-size: large;
     margin-bottom: auto;
-    padding-bottom: 35px;
+    padding-bottom: 55px;
+    padding-left: 70px;
+    padding-right: 70px;
     margin-left: 20px;
     margin-right: 20px;
     font-family:sans-serif;
@@ -320,6 +327,15 @@ flex: 1;
     border-radius: 5px;
   }
 
+  .role {
+    margin-bottom: 3px;
+    margin-top: 2px;
+  }
+
+  .links {
+    margin-bottom: 3px;
+  }
+
   .cardImageBottom {
     height: 375px;
     width: 300px; 
@@ -362,6 +378,7 @@ flex: 1;
     padding-top: 50px;
     font-size: larger;
     text-align: center;
+    padding-bottom: 12vh;
   }
 
   .project-container-bottom {
@@ -613,7 +630,11 @@ flex: 1;
 }
 
 .modal-links {
-  color: white;
+  color: rgb(40, 169, 249);
+}
+
+.tools-languages {
+  margin-bottom: 3px;
 }
 
 .project-part {
@@ -761,7 +782,6 @@ margin-right: 0;
 
 @media screen and (max-width: 1450px ) { 
   .bio-image {
-    height: 400px;
     align-self: center;
     display: flex;
     margin-right: 20px;
@@ -803,16 +823,16 @@ margin-right: 0;
 
 @media screen and (max-width: 1023px ) { 
   .cardImage {
-  height: 300px;
-  width: 200px;
+  height: 285px;
+  width: 190px;
   border-radius: 5px;
   }
 }
 
 @media screen and (max-width: 1023px ) { 
   .cardImageSuya {
-  height: 300px;
-  width: 200px;
+    height: 285px;
+    width: 190px;
   border-radius: 5px;
   margin-right: 5%;
   }
@@ -820,8 +840,8 @@ margin-right: 0;
 
 @media screen and (max-width: 1023px ) { 
   .cardImageInsta {
-  height: 300px;
-  width: 200px;
+    height: 285px;
+    width: 190px;
   border-radius: 5px;
  
   }
@@ -829,8 +849,8 @@ margin-right: 0;
 
 @media screen and (max-width: 1023px ) { 
   .cardImageBottom {
-    height: 300px;
-    width: 200px;
+    height: 285px;
+  width: 190px;
   border-radius: 5px;
   }
 }
@@ -889,7 +909,7 @@ margin-right: 0;
 
 @media screen and (max-width: 1023px ) { 
   .bio-image {
-    height: 300px;
+    height: 200px;
     align-self: center;
     display: flex;
     margin-left: none !important;
@@ -947,7 +967,8 @@ display: none;
   }
 }
 
-@media screen and (max-width: 639px ) { 
+
+@media screen and (max-width: 750px ) { 
   .bio-image {
     height: 220px;
     align-self: center;
@@ -958,14 +979,7 @@ display: none;
   }
 }
 
-@media screen and (max-width: 639px ) { 
-  .about-word {
-    padding-top: 50px;
-    font-size: x-large;
-  }
-}
-
-@media screen and (max-width: 639px ) { 
+@media screen and (max-width: 750px ) { 
   .bio {
    flex-wrap: wrap;
    flex-direction: column;
@@ -974,7 +988,7 @@ display: none;
   }
 }
 
-@media screen and (max-width: 639px ) { 
+@media screen and (max-width: 750px ) { 
   .bio-word {
   text-align: center;
   display: flex;
@@ -982,7 +996,7 @@ display: none;
   }
 }
 
-@media screen and (max-width: 639px ) { 
+@media screen and (max-width: 750px ) { 
   .bio-para {
     margin-top: 30px;
     font-size: 18px;
@@ -990,7 +1004,7 @@ display: none;
   }
 }
 
-@media screen and (max-width: 639px ) { 
+@media screen and (max-width: 750px ) { 
   .bio-para-section {
     flex-direction: column;
    display: flex;
@@ -998,13 +1012,19 @@ display: none;
   }
 }
 
-@media screen and (max-width: 639px ) { 
+@media screen and (max-width: 750px ) { 
   .skills-para {
-    margin-top: 30px;
     font-size: 18px;
    flex-wrap: wrap;
    flex-direction: column;
    display: flex;
+  }
+}
+
+@media screen and (max-width: 639px ) { 
+  .about-word {
+    padding-top: 50px;
+    font-size: x-large;
   }
 }
 
