@@ -71,6 +71,7 @@ a {
   align-items: center;
   flex-direction: row;
 justify-content: space-around;
+margin-bottom: 5.5vh;
 }
 
 .link-logo {
@@ -278,7 +279,7 @@ flex: 1;
   .skills-para {
     text-align: center;
     font-size: large;
-    margin-bottom: auto;
+    margin-bottom: 3vh;
     padding-bottom: 55px;
     padding-left: 70px;
     padding-right: 70px;
@@ -446,6 +447,7 @@ flex: 1;
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow-x: hidden;
   }
   
   .modal-content {
@@ -462,6 +464,7 @@ flex: 1;
     height: fit-content;
     border-radius: 5px;
     font-family:sans-serif;
+    overflow-x: hidden;
   }
   
   .close {
@@ -772,12 +775,20 @@ margin-right: 0;
 
 #placeholderOne {
   background-color: rgb(172, 214, 200);
-  margin:0;
+  padding-top: 40px;
+  margin-top: -40px;
 }
 
 #placeholderTwo {
   background-color: honeydew;
-  margin:0;
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+#placeholderThree {
+  background-color: azure;
+  padding-top: 40px;
+  margin-top: -40px;
 }
 
 @media screen and (max-width: 1450px ) { 
@@ -803,7 +814,7 @@ margin-right: 0;
 
 @media screen and (max-width: 1023px ) { 
   .modal-project-screenshots {
-    width: calc(100% - 10px)
+    width: calc(100% - 4px)
   }
 }
 
@@ -862,6 +873,7 @@ margin-right: 0;
     flex-wrap: wrap;
     flex-direction: column;
     padding-bottom: 20px;
+    overflow-x: hidden;
   }
 }
 
@@ -998,9 +1010,11 @@ display: none;
 
 @media screen and (max-width: 750px ) { 
   .bio-para {
-    margin-top: 30px;
     font-size: 18px;
    justify-content: center;
+   margin-top: 0;
+   padding-left: 40px;
+   padding-right: 40px;
   }
 }
 
@@ -1018,8 +1032,30 @@ display: none;
    flex-wrap: wrap;
    flex-direction: column;
    display: flex;
+   margin-top: 0;
+   padding-left: 40px;
+   padding-right: 40px;
+   margin-left: 0;
+   margin-right: 0;
   }
 }
+
+@media screen and (max-width: 750px ) { 
+  .programming-skill {
+ padding: 10px;
+  }
+}
+
+@media screen and (max-width: 750px ) { 
+  .modal-content {
+ margin-left: 0;
+ width: calc(100% - 60px);
+ margin-right: 0;
+ padding: 30px;
+ overflow-x: hidden;
+  }
+}
+
 
 @media screen and (max-width: 639px ) { 
   .about-word {
@@ -1171,9 +1207,24 @@ display: none;
 @media screen and (max-width: 639px ) { 
   .modal-project-screenshots{
    
-    width: calc(100% - 10px)
+    width: calc(100% - 4px)
   }
 }
+
+
+@media screen and (max-width: 639px ) { 
+  .bio-word{
+   margin-bottom: 15px;
+   padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 639px ) { 
+  .about-word{
+   margin-bottom: 30px;
+  }
+}
+
 
   @media screen and (max-width: 639px ) { 
     #home-tab {
