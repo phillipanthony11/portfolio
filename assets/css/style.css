@@ -62,6 +62,14 @@ a {
     align-items: center;
   }
 
+  #randoOne {
+    background-color:  rgb(172, 214, 200);
+  }
+
+  #randoTwo {
+    background-color: honeydew;
+  }
+
 #nav-bar {
   overflow: hidden;
   background-color: #333;
@@ -71,7 +79,7 @@ a {
   align-items: center;
   flex-direction: row;
 justify-content: space-around;
-margin-bottom: 5.5vh;
+margin-bottom: 7vh;
 }
 
 .link-logo {
@@ -489,6 +497,7 @@ flex: 1;
 
   .tooltip .tooltiptext {
     visibility: hidden;
+    pointer-events: none;
     width: fit-content;
     font-family: sans-serif;
     background-color:aliceblue;
@@ -775,14 +784,14 @@ margin-right: 0;
 
 #placeholderOne {
   background-color: rgb(172, 214, 200);
-  padding-top: 40px;
-  margin-top: -40px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 #placeholderTwo {
   background-color: honeydew;
-  padding-top: 40px;
-  margin-top: -40px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 #placeholderThree {
@@ -1027,6 +1036,12 @@ display: none;
 }
 
 @media screen and (max-width: 750px ) { 
+  .programming-skills-word {
+   padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 750px ) { 
   .skills-para {
     font-size: 18px;
    flex-wrap: wrap;
@@ -1049,7 +1064,7 @@ display: none;
 @media screen and (max-width: 750px ) { 
   .modal-content {
  margin-left: 0;
- width: calc(100% - 60px);
+ width: calc(100% - 70px);
  margin-right: 0;
  padding: 30px;
  overflow-x: hidden;
@@ -1231,3 +1246,11 @@ display: none;
  display: none;
     }
   }
+
+  @media screen and (max-width: 750px ) { 
+    .tooltip:hover .tooltiptext {
+      visibility: hidden;
+    }
+    }
+  
+
