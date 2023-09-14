@@ -79,7 +79,7 @@ a {
   align-items: center;
   flex-direction: row;
 justify-content: space-around;
-margin-bottom: 7vh;
+
 }
 
 .link-logo {
@@ -287,10 +287,10 @@ flex: 1;
   .skills-para {
     text-align: center;
     font-size: large;
-    margin-bottom: 3vh;
-    padding-bottom: 55px;
+    padding-bottom: 10vh;
     padding-left: 70px;
     padding-right: 70px;
+    margin-bottom: 0;
     margin-left: 20px;
     margin-right: 20px;
     font-family:sans-serif;
@@ -784,20 +784,21 @@ margin-right: 0;
 
 #placeholderOne {
   background-color: rgb(172, 214, 200);
-  padding-top: 50px;
-  margin-top: -50px;
+  padding-top: 4em;
+  margin-top: 0;
+ 
 }
 
 #placeholderTwo {
   background-color: honeydew;
-  padding-top: 50px;
-  margin-top: -50px;
+  padding-top: 4em;
+  margin-top: 0;
 }
 
 #placeholderThree {
   background-color: azure;
-  padding-top: 40px;
-  margin-top: -40px;
+  padding-top: 4em;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 1450px ) { 
@@ -1072,14 +1073,15 @@ display: none;
 }
 
 
-@media screen and (max-width: 639px ) { 
+@media screen and (max-width: 750px ) { 
   .about-word {
     padding-top: 50px;
     font-size: x-large;
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 639px ) { 
+@media screen and (max-width: 750px ) { 
   .portfolio-word {
     padding-top: 50px;
     font-size: x-large;
@@ -1212,10 +1214,10 @@ display: none;
   }
 }
 
-@media screen and (max-width: 639px ) { 
+@media screen and (max-width: 750px ) { 
   .contact-me-word {
     font-size: x-large;
-    
+    padding-top: 50px;
   }
 }
 
@@ -1234,11 +1236,6 @@ display: none;
   }
 }
 
-@media screen and (max-width: 639px ) { 
-  .about-word{
-   margin-bottom: 30px;
-  }
-}
 
 
   @media screen and (max-width: 639px ) { 
