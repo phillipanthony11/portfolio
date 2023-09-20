@@ -235,19 +235,34 @@ function activeTab() {
 
   console.log("contact-top:" + contact.getBoundingClientRect().top);
 
-  if (boundTopAbout <= 200) {
+  if (
+    boundTopAbout <= 200 &&
+    !portfolioSection.classList.contains("please-work-hover") &&
+    !contactSection.classList.contains("please-work-hover")
+  ) {
     aboutSection.classList.add("please-work-hover");
   }
-  if (boundTopAbout <= -795 || boundTopAbout >= 201) {
+  if (boundTopAbout <= -about.offsetHeight || boundTopAbout >= 201) {
     aboutSection.classList.remove("please-work-hover");
   }
-  if (boundTopPortfolio <= 150) {
+  if (
+    boundTopPortfolio <= 150 &&
+    !aboutSection.classList.contains("please-work-hover") &&
+    !contactSection.classList.contains("please-work-hover")
+  ) {
     portfolioSection.classList.add("please-work-hover");
   }
-  if (boundTopPortfolio <= -600 || boundTopPortfolio >= 151) {
+  if (
+    boundTopPortfolio <= -portfolio.offsetHeight ||
+    boundTopPortfolio >= 151
+  ) {
     portfolioSection.classList.remove("please-work-hover");
   }
-  if (boundTopContact <= 160) {
+  if (
+    boundTopContact <= 160 &&
+    !portfolioSection.classList.contains("please-work-hover") &&
+    !aboutSection.classList.contains("please-work-hover")
+  ) {
     contactSection.classList.add("please-work-hover");
   }
   if (boundTopContact >= 161) {
@@ -256,3 +271,63 @@ function activeTab() {
 }
 
 window.addEventListener("scroll", activeTab);
+
+function jumpToPortfolio() {
+  const portfolio = document.getElementById("portfolio");
+  const portfolioPosition = portfolio.getBoundingClientRect().top;
+  const test = window.scrollY;
+
+  const navBar = document.getElementById("nav-bar");
+  const navBarHeight = navBar.offsetHeight;
+  if (navBar.classList.contains("sticky")) {
+    window.scroll({
+      top: portfolioPosition + test,
+      behavior: "smooth",
+    });
+  } else {
+    window.scroll({
+      top: portfolioPosition + test - navBarHeight,
+      behavior: "smooth",
+    });
+  }
+}
+
+function jumpToAbout() {
+  const about = document.getElementById("about");
+  const aboutPosition = about.getBoundingClientRect().top;
+  const test = window.scrollY;
+
+  const navBar = document.getElementById("nav-bar");
+  const navBarHeight = navBar.offsetHeight;
+  if (navBar.classList.contains("sticky")) {
+    window.scroll({
+      top: aboutPosition + test,
+      behavior: "smooth",
+    });
+  } else {
+    window.scroll({
+      top: aboutPosition + test - navBarHeight,
+      behavior: "smooth",
+    });
+  }
+}
+
+function jumpToContact() {
+  const contact = document.getElementById("contact");
+  const contactPosition = contact.getBoundingClientRect().top;
+  const test = window.scrollY;
+
+  const navBar = document.getElementById("nav-bar");
+  const navBarHeight = navBar.offsetHeight;
+  if (navBar.classList.contains("sticky")) {
+    window.scroll({
+      top: contactPosition + test,
+      behavior: "smooth",
+    });
+  } else {
+    window.scroll({
+      top: contactPosition + test - navBarHeight,
+      behavior: "smooth",
+    });
+  }
+}
