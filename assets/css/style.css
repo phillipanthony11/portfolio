@@ -60,8 +60,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
+  .top-button:hover {
+    background-color: aquamarine;
+  }
   #randoOne {
     background-color:  rgb(172, 214, 200);
   }
@@ -113,6 +117,7 @@ justify-content: space-around;
     border-radius: 12px;
 align-items: center;
 flex: 1;
+cursor: pointer;
 }  
 
 #nav-bar a{
@@ -527,9 +532,20 @@ margin-bottom: 120px;
     height: 67%;
   }
   
-  .mySlides {
-    display: none;
+  .mySlides1 {
+   background-color: #222;
+   width: calc(100% - 4px);
   }
+
+  .mySlides2 {
+    background-color: #222;
+    width: calc(100% -4px);
+   }
+
+   .mySlides3 {
+    background-color: #222;
+    width: calc(100% -4px);
+   }
 
   .cursor {
     cursor: pointer;
@@ -776,10 +792,7 @@ margin-bottom: 120px;
 height: 330px;
 border: solid 2px lightblue;
 border-bottom: none;
-justify-content: space-around;
-display: flex;
-width: calc(100% - 4px);
-margin-right: 0;
+width: initial;
 }
 
 #placeholderOne {
