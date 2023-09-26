@@ -448,6 +448,14 @@ cursor: pointer;
     margin-bottom: 10px;
   }
 
+  .linkedin:hover {
+    background-color: paleturquoise;
+  }
+
+  .github-portfolio:hover {
+    background-color: paleturquoise;
+  }
+  
   .modal {
     display: none; 
     position: fixed; 
