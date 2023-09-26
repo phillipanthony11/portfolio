@@ -781,6 +781,10 @@ margin-bottom: 120px;
     margin-left: 15%;
 }
 
+.submit-button {
+  cursor: pointer;
+}
+
 .column {
   display: flex;
   justify-content: space-between;
