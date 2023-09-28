@@ -847,11 +847,7 @@ width: initial;
   }
 }
 
-@media screen and (max-width: 1023px ) { 
-  .modal-project-screenshots {
-    width: calc(100% - 4px)
-  }
-}
+
 
 @media screen and (max-width: 1023px ) { 
   #nav-bar {
@@ -1245,21 +1241,11 @@ display: none;
 }
 
 @media screen and (max-width: 639px ) { 
-  .modal-project-screenshots{
-   
-    width: calc(100% - 4px)
-  }
-}
-
-
-@media screen and (max-width: 639px ) { 
   .bio-word{
    margin-bottom: 15px;
    padding-top: 20px;
   }
 }
-
-
 
   @media screen and (max-width: 639px ) { 
     #home-tab {
