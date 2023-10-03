@@ -14,9 +14,9 @@ function myFunction() {
 }
 
 function openModalOne() {
-  document.getElementById("modal1").style.display = "block";
+  document.getElementById("modal1").style.display = "flex";
 }
-
+S;
 function closeModalOne() {
   document.getElementById("modal1").style.display = "none";
 }
@@ -49,13 +49,13 @@ function showSlidesOne(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "flex";
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
 function openModalTwo() {
-  document.getElementById("modal2").style.display = "block";
+  document.getElementById("modal2").style.display = "flex";
 }
 
 function closeModalTwo() {
@@ -90,13 +90,13 @@ function showSlidesTwo(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "flex";
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
 function openModalThree() {
-  document.getElementById("modal3").style.display = "block";
+  document.getElementById("modal3").style.display = "flex"; //block
 }
 
 function closeModalThree() {
@@ -131,7 +131,7 @@ function showSlidesThree(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "flex"; //block
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }

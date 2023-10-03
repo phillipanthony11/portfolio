@@ -543,16 +543,25 @@ margin-bottom: 120px;
   .mySlides1 {
    background-color: #222;
    width: calc(100% - 4px);
+   height: 400px;
+   align-items: center;
+   justify-content: center;
   }
 
   .mySlides2 {
     background-color: #222;
     width: calc(100% -4px);
+    height: 400px;
+    align-items: center;
+    justify-content: center;
    }
 
    .mySlides3 {
     background-color: #222;
     width: calc(100% -4px);
+    height: 400px;
+    align-items: center;
+    justify-content: center;
    }
 
   .cursor {
@@ -801,10 +810,17 @@ margin-bottom: 120px;
 
 .modal-project-screenshots {
 
-height: 330px;
+max-height: 95%;
 border: solid 2px lightblue;
-border-bottom: none;
 width: initial;
+max-width: 95%;
+}
+
+.modal-project-screenshots-wide {
+  border: solid 2px lightblue;
+  max-height: 95%;
+  width:auto;
+max-width: 95%;
 }
 
 #placeholderOne {
